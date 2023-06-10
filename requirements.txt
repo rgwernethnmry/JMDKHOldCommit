@@ -29,3 +29,4 @@ tgCrypto
 xattr
 yt-dlp
 pyrate_limiter
+typing_extensions
