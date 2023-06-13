@@ -356,7 +356,7 @@ Number should be always before |newname or pswd:
         else:
             Thread(target=add_gd_download, args=(link, dl_path, listener, name)).start()
     elif is_mega_link(link):
-        listener.ismega = sendMessage("💡 <b>Mega link this might take a minutes</b>", bot, message)
+        listener.ismega = sendMessage("💡 <b>Mega link Detected, this might take a minute to Start your Download. Please wait for Sometime.</b>", bot, message)
         Thread(target=add_mega_download, args=(link, f'{dl_path}/', listener, name)).start()
     elif isQbit and (is_magnet(link) or path.exists(link)):
         Thread(target=add_qb_torrent, args=(link, dl_path, listener, ratio, seed_time)).start()
